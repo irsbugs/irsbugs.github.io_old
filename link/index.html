@@ -17,8 +17,8 @@
 <meta property="og:title" content="Link Info">
 <meta property="og:url" content="https://irsbugs.github.io/link/">
 <meta property="og:description" content="Link Information
-Link from main Github website to the Github Project web-site for the repository meetings
-On the irsbugs account the github repository meetings has a project web-site. We may link to t">
+Link from main Github website to the Github Project website for the repository meetings
+On the irsbugs account the github repository meetings has a project web-site. We may link to th">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2019-08-20T00:00:00+12:00">
 </head>
@@ -79,35 +79,50 @@ On the irsbugs account the github repository meetings has a project web-site. We
         
 <article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header></header><div class="e-content entry-content" itemprop="articleBody text">
     <div>
-<!--- Demonstrate links that work when this web-site is deployed on github.io -->
+<!--- Demonstrate links that work when this web-site is deployed on irsbugs.github.io -->
 
 <h2>Link Information</h2>
-<h3>Link from main Github website to the Github Project web-site for the repository <em>meetings</em>
+<h3>Link from main Github website to the Github Project website for the repository <em>meetings</em>
 </h3>
-<p>On the irsbugs account the github repository <em>meetings</em> has a <em>project</em> web-site. We may link to this project website in various ways.</p>
-<ol>
-<li>
-<p>This is the full <a href="https://irsbugs.github.io/meetings">link</a>. In markdown the link is:</p>
-<p><code>[link](https://irsbugs.github.io/meetings)</code></p>
+<p>On the irsbugs account the github repository <em>meetings</em> has a <em>project</em> web-site. We may link to this meetings project website as follows:</p>
+<h4>Inline Style</h4>
+<p>This is the Inline Style <a href="https://irsbugs.github.io/meetings">link</a>. In markdown the link is:</p>
+<pre class="code literal-block"><span></span>[link](https://irsbugs.github.io/meetings)
+</pre>
+
+
 <p>Nikola converts the above to the following html:</p>
-<p><code>&lt;a href="https://irsbugs.github.io/meetings"&gt;link&lt;/a&gt;</code></p>
-</li>
-<li>
-<p>This is a shortened <a href="../meetings/index.html">link</a>. In markdown the link is:</p>
-<p><code>[link](/meetings/index.html)</code></p>
+<pre class="code literal-block"><span></span><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://irsbugs.github.io/meetings"</span><span class="nt">&gt;</span>link<span class="nt">&lt;/a&gt;</span>  
+</pre>
+
+
+<p>This provides the link: <code>https://irsbugs.github.io/meetings</code></p>
+<p>In the <em>/meetings/</em> folder the file <em>index.html</em> defaults to being served to the web-browser.</p>
+<h4>Relative Reference to a Repository.</h4>
+<p>This is a Relative Reference to a Repository <a href="../meetings">link</a>. In markdown the link is:</p>
+<pre class="code literal-block"><span></span>[link](/meetings)
+</pre>
+
+
 <p>Nikola converts the above to the following html:</p>
-<p><code>&lt;a href="/meetings/index.html"&gt;link&lt;/a&gt;</code></p>
-</li>
-<li>
-<p>This is a very short <a href="../meetings">link</a>. In markdown the link is:
-    <code>[link](/meetings)</code></p>
-<p>Nikola converts the above to the following html:</p>
-<p><code>&lt;a href="/meetings"&gt;link&lt;/a&gt;</code></p>
-</li>
-</ol>
-<p>When the <code>$ nikola serve -b</code> is used to test the web-site on your laptop, then link methods two and three above will fail. Once the Nikola site has been deployed to <code>https://irsbugs.github.io</code> then these links work OK.</p>
-<p>Try a link to <a href="http://www.google.com">google</a>.</p>
-<p>Markdown: <code>[google](http://www.google.com)</code>. HTML: <code>&lt;a href="http://www.google.com"&gt;google&lt;/a&gt;</code></p>
+<pre class="code literal-block"><span></span><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"../meetings"</span><span class="nt">&gt;</span>link<span class="nt">&lt;/a&gt;</span>`
+</pre>
+
+
+<p>This provides the link: <code>https://irsbugs.github.io/meetings</code></p>
+<p>In the <em>/meetings/</em> folder the file <em>index.html</em> defaults to being served to the web-browser.</p>
+<h4>Notes</h4>
+<p>When the <code>$ nikola serve -b</code> is used to test the web-site on your development computer, then the <em>Relative Reference to a Repository</em> method is likely to fail. Once the Nikola site has been deployed to <code>https://irsbugs.github.io</code> then this type of link will work.</p>
+<h4>Link with Mouse-Over Title</h4>
+<p>A link with mouse-over title to <a href="http://www.google.com" title="Use Google to Perform Search">google</a></p>
+<p>Original Markdown:</p>
+<pre class="code literal-block"><span></span>[google](http://www.google.com "Use Google to Perform Search")
+</pre>
+
+
+<p>Nikola html:</p>
+<pre class="code literal-block"><span></span><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://www.google.com"</span> <span class="na">title=</span><span class="s">"Use Google to Perform Search"</span><span class="nt">&gt;</span>google<span class="nt">&lt;/a&gt;</span>
+</pre>
 </div>
     </div>
     

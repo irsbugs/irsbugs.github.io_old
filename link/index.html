@@ -93,16 +93,16 @@ On the irsbugs account the github repository meetings has a project web-site. We
 <p><code>&lt;a href="https://irsbugs.github.io/meetings"&gt;link&lt;/a&gt;</code></p>
 </li>
 <li>
-<p>This is a shortened <a href="/meetings/index.html">link</a>. In markdown the link is:</p>
-<p><code>[link](meetings/index.html)</code></p>
+<p>This is a shortened <a href="../meetings/index.html">link</a>. In markdown the link is:</p>
+<p><code>[link](/meetings/index.html)</code></p>
 <p>Nikola converts the above to the following html:</p>
-<p><code>&lt;a href="/meetings/index.html"&gt;link&lt;/a&gt; changed to add backslash</code></p>
+<p><code>&lt;a href="/meetings/index.html"&gt;link&lt;/a&gt;</code></p>
 </li>
 <li>
-<p>This is a very short <a href="meetings">link</a>. In markdown the link is:
-    <code>[link](meetings)</code></p>
+<p>This is a very short <a href="../meetings">link</a>. In markdown the link is:
+    <code>[link](/meetings)</code></p>
 <p>Nikola converts the above to the following html:</p>
-<p><code>&lt;a href="meetings"&gt;link&lt;/a&gt;</code></p>
+<p><code>&lt;a href="/meetings"&gt;link&lt;/a&gt;</code></p>
 </li>
 </ol>
 <p>When the <code>$ nikola serve -b</code> is used to test the web-site on your laptop, then link methods two and three above will fail. Once the Nikola site has been deployed to <code>https://irsbugs.github.io</code> then these links work OK.</p>
